@@ -1,0 +1,23 @@
+{
+  "name": "bsc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-yoga": "^1.14.10"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "@types/ws": "^6.0.4",
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.17.5",
+    "typescript": "^3.7.3"
+  }
+}
